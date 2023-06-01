@@ -1,0 +1,20 @@
+.zona_cards{
+ display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+@media (min-width:501px) and (max-width:900px) {
+ .zona_cards{
+  grid-template-columns: 1fr 1fr; 
+  grid-gap: 10px;
+  }
+}
+@media (max-width:500px) {
+  .zona_cards{
+   grid-template-columns: 1fr; 
+   }
+ }
+
+
+

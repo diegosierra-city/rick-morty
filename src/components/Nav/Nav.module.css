@@ -1,0 +1,7 @@
+.nav{
+ background-color: rgba(255,255,255,0.7); display: flex; justify-content: center
+}
+
+button{ margin: 0px 15px}
+.active{color:red}
+.disable{color:blue}
