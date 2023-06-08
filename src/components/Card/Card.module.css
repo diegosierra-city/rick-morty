@@ -36,14 +36,17 @@ position: absolute; top: 8px; right: -20px; font-size:30px; cursor:pointer
 .zona_botones{
  display: flex; justify-content:space-evenly; margin-top:5px;postion:relative; z-index: 10; font-size: 25px;
 }
+.zona_botones button{
+ padding: 0px 3px ;
+}
 
 .zona_iconos .btn-red{
  color: red; cursor: pointer;
 }
-.btn-white{
+.zona_iconos .btn-white{
  color: white; cursor: pointer;
 }
-.btn-green{
+.zona_iconos .btn-green{
  color: green; cursor: pointer;
 }
 

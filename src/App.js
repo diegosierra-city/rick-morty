@@ -31,11 +31,11 @@ return access
    }
 
  const onClose = (idBorrar) => {
+   //alert(idBorrar)
   let newCharacters = characters.filter((item) => item.id !== Number(idBorrar));
   setCharacters(newCharacters)
-  //alert(idBorrar)
-}
-   
+  //
+}   
 const location=useLocation()
 //console.log(location)
   
@@ -55,7 +55,7 @@ const location=useLocation()
 <Route path="/home" element={<Cards characters={characters} onClose={onClose} />} />
 <Route path="/about" element={<About />} />
 <Route path="/detail/:id" element={<Detail />} />
-<Route path="/favorities" element={<Favorities />} />
+<Route path="/favorities" element={<Favorities onClose={onClose} />} />
 <Route path="*" element={<Error />} />
 </Routes>
       </div>

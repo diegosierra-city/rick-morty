@@ -3,9 +3,16 @@ import axios from "axios"
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import styles from './Detail.module.css'
+import { useNavigate } from "react-router-dom"
+
 export default function Detail() {
    let id = useParams()
    //console.log('id',id)
+   const navigate = useNavigate();
+
+   function handleBack() {
+     navigate(-1); // Navega a la ruta anterior
+     }
 
    const [character, setCharacter] = useState({})
 
@@ -36,7 +43,7 @@ export default function Detail() {
                Origin: {() => character.origin.name ? character.origin.name : ''}<br />
 {/* {character.origin?.name} */}
             </p>
-            <Link to={'/home'}><button>Regresar</button></Link>
+            <button onClick={handleBack}>Regresar</button>
          </div><div>
                <img src={character.image} alt={character.name} />
             </div></>

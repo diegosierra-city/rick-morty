@@ -5,7 +5,7 @@ import {filterCards, orderCards} from '../../redux/actions'
 import { useDispatch, useSelector } from "react-redux"
 import { useState } from "react"
 
-function Favorities(){
+function Favorities({onClose}){
 const favoritos = useSelector(state=>state.myFavorites) /// traemos los favoritos del store
 
 const [aux,setAux] = useState(false) /// el cambio de este estado fuerza a React a actualizar el DOM
@@ -41,7 +41,7 @@ return <div>
  </select> 
 </div>
  
- <Cards characters={favoritos} />
+ <Cards characters={favoritos} onClose={onClose}/>
 
 </div>
 }

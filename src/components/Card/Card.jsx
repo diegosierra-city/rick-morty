@@ -1,7 +1,7 @@
 
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faPersonCircleQuestion, faCircleXmark, faMagnifyingGlass, faCircleUser, faHeart } from '@fortawesome/free-solid-svg-icons'
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import style from './Card.module.css'
 import { connect } from 'react-redux';
 import {addFav,removeFav} from '../../redux/actions'
@@ -9,6 +9,7 @@ import { useState, useEffect } from 'react';
 
 
 function Card({character,onClose,addFav,removeFav,myFavorites}) {
+   
 
    const [isFav, setIsFav] = useState(false)
 
@@ -64,7 +65,11 @@ removeFav(character.id)
 }
 {/* <FontAwesomeIcon icon={faHeart} /> */}
 </span> 
-<button onClick={()=>onClose(character.id)}>
+<button onClick={()=>{
+   onClose(character.id)
+   setIsFav(true)
+   handleFavorite()
+   }}>
 <FontAwesomeIcon icon={faCircleXmark} />
 </button> 
 </div>
