@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
 
 .card {
- background-color: #fff;
  border-radius: 15px;
  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
  display: inline-block;
@@ -10,11 +9,13 @@
  width: 250px;
  border:solid 2px SlateBlue; 
  background: linear-gradient(to bottom, SlateGray, LightBlue); 
- margin: 20px 0px
+ margin: 20px 0px;
+ color: black;
+ font-size: 15px;
 }
 
 .close {
-position: absolute; top: 8px; right: -20px; font-size:30px; color:white; cursor:pointer
+position: absolute; top: 8px; right: -20px; font-size:30px; cursor:pointer
 }
 .close:hover{
  color:red
@@ -24,22 +25,45 @@ position: absolute; top: 8px; right: -20px; font-size:30px; color:white; cursor:
 
 }
 .zona_iconos{
- display: flex;
+ display:flex; align-items:center; justify-content:space-between;
+}
+.zona_iconos div{
+ color: black; font-size: 14px; padding: 0px 10px; border-left:dotted 1px black
+}
+.zona_iconos div:hover{
+ text-decoration: underline;
+}
+.zona_botones{
+ display: flex; justify-content:space-evenly; margin-top:5px;postion:relative; z-index: 10; font-size: 25px;
 }
 
+.zona_iconos .btn-red{
+ color: red; cursor: pointer;
+}
+.btn-white{
+ color: white; cursor: pointer;
+}
+.btn-green{
+ color: green; cursor: pointer;
+}
+
+.btn-red:hover, .btn-white:hover, .btn-green:hover {background-color: black;}
+
+.zona_iconos .font2x{font-size: 20px; color:SlateBlue; border: none; margin-right: 10px;}
 .card img {
  display: block;
  height: 200px;
  margin: 0 auto;
  width: 200px;
- border-radius: 50%; box-shadow: 0 2px 5px; border:solid 4px white; margin-top: -30px
+ border-radius: 50%; box-shadow: 0 2px 5px; border:solid 4px white; margin-top: -30px; position: relative; z-index: 1; 
 }
 
 .card h2 {
- font-size: 24px;
- margin: 10px 0;
- text-align: center; font-family: 'Mansalva', sans-serif;
+ font-size: 25px;
+ margin-top: -5px;
+ text-align: center; font-family: 'Mansalva', sans-serif; height: 80px;
 }
+
 
 .card p {
  font-size: 16px;

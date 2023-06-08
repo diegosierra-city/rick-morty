@@ -1,6 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+
 .App {
    text-align: center;
 }
 .logo{
    width: 400px; height: auto; margin-top: -20px
 }
+.titulo{
+   font-family: 'Mansalva', sans-serif;
+}
+
+button, select{
+   background-color: #fff;
+   border-radius: 15px;
+   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+   
+   padding: 0px 10px ;
+   
+   border:solid 4px linear-gradient(to bottom, SlateGray, LightBlue);; 
+   background: black; color:white; margin-left: 4px;
+   margin: 20px 0px; font-family: 'Mansalva', sans-serif; font-size: 18px; cursor:pointer; display: inline-block; margin: 0px 10px; height: auto;
+}
+
+button:hover{
+   background: green;
+  }

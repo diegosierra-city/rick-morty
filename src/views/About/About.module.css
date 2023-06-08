@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+
+.detail{
+ display:grid; 
+ grid-template-columns: 1fr 1fr; 
+ width: 60vw; 
+ margin-left: 20vw;
+
+ border-radius: 15px;
+ box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+ padding: 10px;
+ border:solid 2px SlateBlue; 
+ background: linear-gradient(to bottom, SlateGray, LightBlue); 
+ 
+}
+
+h2{
+ font-family: 'Mansalva', sans-serif; font-size: 30px;
+}
+.detail img {
+ display: block;
+ height: 20vw;
+ margin: 0 auto;
+ width: 20vw;
+ border-radius: 50%; box-shadow: 0 2px 5px; border:solid 4px white; margin-top: -30px
+}
+
+.detail div{
+ color: black;
+ font-size: 20px;
+}
